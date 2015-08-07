@@ -1,0 +1,468 @@
+Name:    Ripal A. Kasumbiwal
+Roll no: 201560619
+Get:47 http://in.archive.ubuntu.com trusty-updates/restricted Sources [4,717 B]
+Get:48 http://in.archive.ubuntu.com trusty-updates/universe Sources [131 kB]   
+Get:49 http://in.archive.ubuntu.com trusty-updates/multiverse Sources [5,138 B]
+Get:50 http://in.archive.ubuntu.com trusty-updates/main amd64 Packages [599 kB]
+Get:51 http://in.archive.ubuntu.com trusty-updates/restricted amd64 Packages [15.3 kB]
+Get:52 http://in.archive.ubuntu.com trusty-updates/universe amd64 Packages [302 kB]
+Get:53 http://in.archive.ubuntu.com trusty-updates/multiverse amd64 Packages [12.0 kB]
+Get:54 http://in.archive.ubuntu.com trusty-updates/main i386 Packages [579 kB] 
+Get:55 http://in.archive.ubuntu.com trusty-updates/restricted i386 Packages [15.2 kB]
+Get:56 http://in.archive.ubuntu.com trusty-updates/universe i386 Packages [303 kB]
+Get:57 http://in.archive.ubuntu.com trusty-updates/multiverse i386 Packages [12.1 kB]
+Get:58 http://in.archive.ubuntu.com trusty-updates/main Translation-en [288 kB]
+Get:59 http://in.archive.ubuntu.com trusty-updates/multiverse Translation-en [6,148 B]
+Get:60 http://in.archive.ubuntu.com trusty-updates/restricted Translation-en [3,560 B]
+Get:61 http://in.archive.ubuntu.com trusty-updates/universe Translation-en [160 kB]
+Get:62 http://in.archive.ubuntu.com trusty-backports/main Sources [5,851 B]    
+Get:63 http://in.archive.ubuntu.com trusty-backports/restricted Sources [28 B] 
+Get:64 http://in.archive.ubuntu.com trusty-backports/universe Sources [28.4 kB]
+Get:65 http://in.archive.ubuntu.com trusty-backports/multiverse Sources [1,898 B]
+Get:66 http://in.archive.ubuntu.com trusty-backports/main amd64 Packages [6,256 B]
+Get:67 http://in.archive.ubuntu.com trusty-backports/restricted amd64 Packages [28 B]
+Get:68 http://in.archive.ubuntu.com trusty-backports/universe amd64 Packages [32.6 kB]
+Get:69 http://in.archive.ubuntu.com trusty-backports/multiverse amd64 Packages [1,571 B]
+Get:70 http://in.archive.ubuntu.com trusty-backports/main i386 Packages [6,285 B]
+Get:71 http://in.archive.ubuntu.com trusty-backports/restricted i386 Packages [28 B]
+Get:72 http://in.archive.ubuntu.com trusty-backports/universe i386 Packages [32.6 kB]
+Get:73 http://in.archive.ubuntu.com trusty-backports/multiverse i386 Packages [1,552 B]
+Get:74 http://in.archive.ubuntu.com trusty-backports/main Translation-en [3,645 B]
+Get:75 http://in.archive.ubuntu.com trusty-backports/multiverse Translation-en [1,215 B]
+Get:76 http://in.archive.ubuntu.com trusty-backports/restricted Translation-en [14 B]
+Get:77 http://in.archive.ubuntu.com trusty-backports/universe Translation-en [29.6 kB]
+Ign http://in.archive.ubuntu.com trusty/main Translation-en_IN                 
+Ign http://in.archive.ubuntu.com trusty/multiverse Translation-en_IN           
+Ign http://in.archive.ubuntu.com trusty/restricted Translation-en_IN           
+Ign http://in.archive.ubuntu.com trusty/universe Translation-en_IN             
+Fetched 31.7 MB in 20s (1,573 kB/s)                                            
+Reading package lists... Done
+ripal@ripal-Lenovo-Flex-2-14:~$ sudo apt-get install git
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  git-man liberror-perl
+Suggested packages:
+  git-daemon-run git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-arch git-bzr git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  git git-man liberror-perl
+0 upgraded, 3 newly installed, 0 to remove and 369 not upgraded.
+Need to get 3,346 kB of archives.
+After this operation, 21.6 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/main liberror-perl all 0.17-1.1 [21.1 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main git-man all 1:1.9.1-1ubuntu0.1 [698 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main git amd64 1:1.9.1-1ubuntu0.1 [2,627 kB]
+Fetched 3,346 kB in 0s (9,981 kB/s)
+Selecting previously unselected package liberror-perl.
+(Reading database ... 163804 files and directories currently installed.)
+Preparing to unpack .../liberror-perl_0.17-1.1_all.deb ...
+Unpacking liberror-perl (0.17-1.1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a1.9.1-1ubuntu0.1_all.deb ...
+Unpacking git-man (1:1.9.1-1ubuntu0.1) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a1.9.1-1ubuntu0.1_amd64.deb ...
+Unpacking git (1:1.9.1-1ubuntu0.1) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Setting up liberror-perl (0.17-1.1) ...
+Setting up git-man (1:1.9.1-1ubuntu0.1) ...
+Setting up git (1:1.9.1-1ubuntu0.1) ...
+ripal@ripal-Lenovo-Flex-2-14:~$ cd Desktop
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop$ git init
+Initialized empty Git repository in /home/ripal/Desktop/.git/
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop$ git config
+usage: git config [options]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color <slot>    find the color configured: [default]
+    --get-colorbool <slot>
+                          find the color setting: [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --includes            respect include directives on lookup
+
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop$ git config --global user.name "ripal"
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop$ git config --global user.name ripal 
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop$ git config --global user.email kasumbiwal.r@students.iiit.ac.in
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop$ git init
+Reinitialized existing Git repository in /home/ripal/Desktop/.git/
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop$ git clone
+You must specify a repository to clone.
+
+usage: git clone [options] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recursive           initialize submodules in the clone
+    --recurse-submodules  initialize submodules in the clone
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --single-branch       clone only one branch, HEAD or --branch
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop$ git clone https://github.com/cps-monsoon-2015/lab1
+Cloning into 'lab1'...
+remote: Counting objects: 222, done.
+remote: Compressing objects: 100% (162/162), done.
+remote: Total 222 (delta 111), reused 164 (delta 53), pack-reused 0
+Receiving objects: 100% (222/222), 52.73 KiB | 45.00 KiB/s, done.
+Resolving deltas: 100% (111/111), done.
+Checking connectivity... done.
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	lab1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop$ cd lab1
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560619_explanation.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git add explanations/201560619_explanation.txt
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   explanations/201560619_explanation.txt
+
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git commit -m "added information about first class"
+[master c849f25] added information about first class
+ 1 file changed, 16 insertions(+)
+ create mode 100644 explanations/201560619_explanation.txt
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ gedit participants/201560619.txt
+
+(gedit:5843): Gtk-WARNING **: GtkScrolledWindow 0x27a8880 is mapped but visible child GtkScrollbar 0x27aeb20 is not mapped
+
+(gedit:5843): Gtk-WARNING **: GtkScrolledWindow 0x27a8880 is mapped but visible child GtkScrollbar 0x27aed20 is not mapped
+
+(gedit:5843): Gtk-WARNING **: GtkScrolledWindow 0x27a8880 is mapped but visible child GtkScrollbar 0x27aeb20 is not mapped
+
+(gedit:5843): Gtk-WARNING **: GtkScrolledWindow 0x27a8880 is mapped but visible child GtkScrollbar 0x27aed20 is not mapped
+
+(gedit:5843): Gtk-WARNING **: GtkScrolledWindow 0x27a8880 is mapped but visible child GtkScrollbar 0x27aed20 is not mapped
+
+(gedit:5843): Gtk-WARNING **: GtkScrolledWindow 0x27a8880 is mapped but visible child GtkScrollbar 0x27aeb20 is not mapped
+
+(gedit:5843): Gtk-WARNING **: GtkScrolledWindow 0x27a8880 is mapped but visible child GtkScrollbar 0x27aed20 is not mapped
+
+(gedit:5843): Gtk-WARNING **: GtkScrolledWindow 0x27a8880 is mapped but visible child GtkScrollbar 0x27aeb20 is not mapped
+
+(gedit:5843): Gtk-WARNING **: GtkScrolledWindow 0x27a8880 is mapped but visible child GtkScrollbar 0x27aeb20 is not mapped
+
+(gedit:5843): Gtk-WARNING **: GtkScrolledWindow 0x27a8880 is mapped but visible child GtkScrollbar 0x27aed20 is not mapped
+
+(gedit:5843): Gtk-WARNING **: GtkScrolledWindow 0x27a8880 is mapped but visible child GtkScrollbar 0x27aeb20 is not mapped
+
+(gedit:5843): Gtk-WARNING **: GtkScrolledWindow 0x27a8880 is mapped but visible child GtkScrollbar 0x27aed20 is not mapped
+
+(gedit:5843): Gtk-WARNING **: GtkScrolledWindow 0x27a8880 is mapped but visible child GtkScrollbar 0x27aed20 is not mapped
+
+(gedit:5843): Gtk-WARNING **: GtkScrolledWindow 0x27a8880 is mapped but visible child GtkScrollbar 0x27aeb20 is not mapped
+
+(gedit:5843): Gtk-WARNING **: GtkScrolledWindow 0x27a8880 is mapped but visible child GtkScrollbar 0x27aed20 is not mapped
+
+(gedit:5843): Gtk-WARNING **: GtkScrolledWindow 0x27a8880 is mapped but visible child GtkScrollbar 0x27aeb20 is not mapped
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants/201560619.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git add participants/201560619.txt
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   participants/201560619.txt
+
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git commit -m "added information"
+[master bcf0820] added information
+ 1 file changed, 2 insertions(+)
+ create mode 100644 participants/201560619.txt
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+To https://github.com/cps-monsoon-2015/lab1
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/cps-monsoon-2015/lab1'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git pull https://github.com/cps-monsoon-2015/lab1
+remote: Counting objects: 17, done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 17 (delta 11), reused 16 (delta 10), pack-reused 0
+Unpacking objects: 100% (17/17), done.
+From https://github.com/cps-monsoon-2015/lab1
+ * branch            HEAD       -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ explanations/201560522_explanation.txt | 1 +
+ participants.md                        | 1 +
+ participants.rkt                       | 2 ++
+ participants/201560522.txt             | 2 +-
+ 4 files changed, 5 insertions(+), 1 deletion(-)
+ create mode 100644 explanations/201560522_explanation.txt
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 35, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (12/12), 1.50 KiB | 0 bytes/s, done.
+Total 12 (delta 7), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   de5dde4..4356e1e  master -> master
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ gedit participants.md
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git add participants.md
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   participants.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git commit participants.md
+Aborting commit due to empty commit message.
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git commit -m "added name to the participants list"
+[master 4e930bf] added name to the participants list
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+To https://github.com/cps-monsoon-2015/lab1
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/cps-monsoon-2015/lab1'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ gedit participants.rkt
+
+(gedit:5942): Gtk-WARNING **: GtkScrolledWindow 0x18bf880 is mapped but visible child GtkScrollbar 0x18c4b20 is not mapped
+
+(gedit:5942): Gtk-WARNING **: GtkScrolledWindow 0x18bf880 is mapped but visible child GtkScrollbar 0x18c4d20 is not mapped
+
+(gedit:5942): Gtk-WARNING **: GtkScrolledWindow 0x18bf880 is mapped but visible child GtkScrollbar 0x18c4b20 is not mapped
+
+(gedit:5942): Gtk-WARNING **: GtkScrolledWindow 0x18bf880 is mapped but visible child GtkScrollbar 0x18c4d20 is not mapped
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+	modified:   participants.rkt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants.rkt~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git add participants.rkt
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   participants.rkt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants.rkt~
+
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git commit -m "added one participant"
+[master 2c5111e] added one participant
+ 1 file changed, 1 insertion(+)
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git commit
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+	modified:   participants.md~
+
+Untracked files:
+	participants.rkt~
+
+no changes added to commit
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants.rkt~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+To https://github.com/cps-monsoon-2015/lab1
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/cps-monsoon-2015/lab1'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git pull https://github.com/cps-monsoon-2015/lab1
+remote: Counting objects: 14, done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 14 (delta 8), reused 12 (delta 6), pack-reused 0
+Unpacking objects: 100% (14/14), done.
+From https://github.com/cps-monsoon-2015/lab1
+ * branch            HEAD       -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ explanations/201560522_lab1.txt        | 356 +++++++++++++++++++++++++++++++++
+ explanations/201560617_explanation.txt |   1 +
+ 2 files changed, 357 insertions(+)
+ create mode 100644 explanations/201560522_lab1.txt
+ create mode 100644 explanations/201560617_explanation.txt
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 26, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 910 bytes | 0 bytes/s, done.
+Total 8 (delta 5), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   d8e90e9..bb27bf4  master -> master
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ cd ..
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop$ cd lab1
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1$ cd explanations
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1/explanations$ 201560619_lab1.txt
+201560619_lab1.txt: command not found
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1/explanations$ gedit 2015_lab1.txt
+ripal@ripal-Lenovo-Flex-2-14:~/Desktop/lab1/explanations$ gedit 201560619_lab1.txt
+
+(gedit:6041): Gtk-WARNING **: GtkScrolledWindow 0x235c880 is mapped but visible child GtkScrollbar 0x2364b70 is not mapped
+
+(gedit:6041): Gtk-WARNING **: GtkScrolledWindow 0x235c880 is mapped but visible child GtkScrollbar 0x2364d70 is not mapped
+
+(gedit:6041): Gtk-WARNING **: GtkScrolledWindow 0x235c880 is mapped but visible child GtkScrollbar 0x2364b70 is not mapped
+
+(gedit:6041): Gtk-WARNING **: GtkScrolledWindow 0x235c880 is mapped but visible child GtkScrollbar 0x2364d70 is not mapped
+
+commands:
+git init: it is used to initialize an empty repository.
+git status: it is used to give the status of a file since it is last commited
+git commit: it is used to confirm the changes in file as well as can be used to add arguments
+git add: it is used to stage files into staging area
+git rm: to remove the added files from the repository
+git push: it is used to push the changes into the global repository
+git pull: to pull the changes made by other users to it
+git reset: to unstage the file
+git log: gives the history of the entire changes of the files
+git status: used to track files
+gedit: to create/edit files
+
