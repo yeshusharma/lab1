@@ -1,0 +1,7 @@
+The eercise 0 focused on giving a hands on experience with basic git commands. It helped us understand how Git works and how to perform basic operations on git. For example:
+
+git add command enables the user to put the desired file on the staging area before commit. 
+
+git status helps in identifying the current status of our respository.
+
+
