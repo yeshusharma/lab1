@@ -8,6 +8,9 @@ A list of participants in CSE 602
 * Gitanjali Vaidya (201560558)
 * Gugan Vignesh Selvaraj (201212345)
 * Janani Sundar (201460623)
+* Ripal Kasumbiwal (201560619)
 * Shweta Kulshreshtha (201560516)
 * Sudhanshu Kumar Singh (201560557)
+* Tejeswi Muthireddy (201560522)
 * Vinay Kusuma (201560592)
+

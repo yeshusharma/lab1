@@ -1,0 +1,1 @@
+Lab class about git helped m to get acquinted with various gitare git status(tells whether a file is tracked or not), git add(adds a file to the staging area),git log(informs about the history) and many more such commands. we also had a practicing experince withoctocat chalanges.it was a great expice looking for much more such lab sessions ahead.
