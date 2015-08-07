@@ -7,3 +7,4 @@ A list of participants in CSE 602
 * Gugan Vignesh Selvaraj (201212345)
 * Janani Sundar (201460623)
 * Sudhanshu Kumar Singh (201560557)
+* Vinay Kusuma (201560592)
