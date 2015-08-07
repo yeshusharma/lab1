@@ -1,0 +1,16 @@
+Git is a sourse control repository.
+it is basically lets multiple users to make changes to the same document without disturbing others work.
+it is an online repository which keeps the record of all the edited documents.
+Git is an example of distributed version control system.
+It has multiple uses. There are certain commands which are used in git.
+those and their uses are as below
+git init: it is used to initialize an empty repository.
+git status: it is used to give the status of a file since it is last commited
+git commit: it is used to confirm the changes in file as well as can be used to add arguments
+git add: it is used to stage files into staging area
+git rm: to remove the added files from the repository
+git push: it is used to push the changes into the global repository
+git pull: to pull the changes made by other users to it
+git reset: to unstage the file
+git log: gives the history of the entire changes of the files
+git status: tracks file
