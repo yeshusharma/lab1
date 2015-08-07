@@ -1,0 +1,15 @@
+Git ia s version control system which has a ability to handle large projects.
+It creates a global repository which can be cloned in one's system by command git clone https://github.com/username/repository name.
+Now multiple users and edit,access the files in their local repository and then upload in the global repository so that all other people can access and view the changes.One of the most imp features of git is it can store the chnages in time capsules and history of all the changes and commits made by all the members. git can be used with windows as well as in linux.the system is update and install all the git gui from github.com. 
+In the eg 0 ,we have studied some commands as follows
+git init= used to initialized the empty repository in our system.
+git status= used to know the status of the file added in the repository.
+git add= to add a file .
+git commit -m=to confirm the changes and also to add a a comment
+In the eg 2, we have to create a new file as <rollno>_txt and explanations_txt by add "file name.txt" command.
+the final step is to "push" the files back in the global repository"cps-monsoon-2015/lab1"
+The commands is git push origin master.
+Another step is to pull the files from global repository to local.. make changes and push back again
+
+
+ 
