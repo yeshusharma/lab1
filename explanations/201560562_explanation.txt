@@ -1,0 +1,72 @@
+git commands:
+
+1) $ git init cps : To create an empty and local git repository named cps. A hidden folder with a .git extention is created within the repository.
+
+2) $ git clone < url of repository you want to copy > : To get a local copy of an online repository.
+Eg: $ git clone https://github.com/cps-monsoon-2015/lab1
+
+3) $ git add < list of files > : To start considering these files as a part of the repository. Now they can be tracked.
+Eg.: $ git add octocat.txt
+
+4) $ git rm < list of files > : To remove files from the repository.
+
+5) $ git commit -m " Add cute octocat story "  : To record the changes to the local repository. 
+Note: -m gives a brief message of what is being commited.
+Output:
+[master (root-commit) 373b119]  Add cute octocat story
+ 1 file changed, 1 insertion(+)
+ create mode 100644 octocat.txt
+
+6) $ git status: Tells the status of files in the staging area.
+
+a. If there are no files then the following message is displayed:-
+# On branch master
+#
+# Initial commit
+#
+nothing to commit (create/copy files and use "git add" to track)
+
+b. If a file is created but is untracked, then the following message is displayed:-
+
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	octocat.txt
+nothing added to commit but untracked files present (use "git add" to track)
+
+Note: Here, octocat.txt is the file which is created but yet untracked.
+
+c. After a file has been added to the staging area, the following message is displayed:-
+
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   octocat.txt
+#
+Note: Here, octocat.txt is added to the staging area.
+
+d. After a file has been commited, the following message is displayed:-
+
+# On branch master
+nothing to commit (working directory clean)
+
+7) $ git log : This will show the commits that have been done - their date, author, messages along with it, etc.
+Output:
+commit b652edfd888cd3d5e7fcb857d0dabc5a0fcb5e28
+Author: Try Git <try_git@github.com>
+Date:   Sat Oct 10 08:30:00 2020 -0500
+
+    Added cute octocat story
+
+8) $ git push https://github.com/username/repository : To push the changes onto the GitHub repository in order to update the server.
+Eg: $ git push https://github.com/cps-monsoon-2015/lab1
+
+Pattern followed in commands: All the commands have a '$' sign followed by a 'git' keyword.
