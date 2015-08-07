@@ -1,0 +1,16 @@
+command used basically =
+mkdir=make a directory
+cd = to go in next directory so that we can initiat our project
+cd .. to retun back to folder
+pwd = to know about path of folder
+ls= to mainly list file which are in folder 
+clone =to copy the project from respository to staging area 
+add = to add text file from working area to staging area 
+status = to know whether the file is being added ou tracked or untracked file
+commit to main take a snap shot of or history
+mainily you will use git add  to start tracking new file and to also stage changes in already tracked files.then git status wil tell that our command is being modified or not and finalyy to record snapshot into your history
+git commit and git diff that whethe the command is being modified aur not and basically git diff tell us about whether user has made changes or not
+echo mainly to make txt file 
+git log it tell about date time and name
+git push main use to transfer file from staging area to working directories and repository
+pull to fetches the command from repository  
