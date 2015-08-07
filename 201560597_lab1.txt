@@ -1,4 +1,4 @@
-name-shreyali ganvir
+Name-shreyali ganvir
 roll no:201560597
 git init=to initiate the empty repository
 git status= to know the status of current file added.. wheather it is tracked,committed
