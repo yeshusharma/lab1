@@ -1,0 +1,525 @@
+LAB1
+
+Name - Aditi Gautam
+Roll no - 201560543
+
+Following are the commands used to complete the assignment:
+The explanations are given at the very end.
+
+
+README.md                |   4 ++++
+ explanations/sample      |  38 ++++++++++++++++++++++++++++++++++++++
+ explanations/sample.pdf  | Bin 0 -> 17997 bytes
+ participants.md          |   7 +++++++
+ participants.rkt         |  17 +++++++++++++++++
+ participants/201460623   |   3 +++
+ participants/<roll_no>   |   3 +++
+ participants/Aboutme.txt |  14 ++++++++++++++
+ tips.md                  |  16 ++++++++++++++++
+ 9 files changed, 102 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 explanations/sample
+ create mode 100644 explanations/sample.pdf
+ create mode 100644 participants.md
+ create mode 100644 participants.rkt
+ create mode 100644 participants/201460623
+ create mode 100644 participants/<roll_no>
+ create mode 100644 participants/Aboutme.txt
+ create mode 100644 tips.md
+aditi@aditi-HP-15-Notebook-PC:~/Desktop$ git status
+On branch master
+nothing to commit, working directory clean
+aditi@aditi-HP-15-Notebook-PC:~/Desktop$ git log
+commit 9de67aa6aefaf61ce06fa163d66a94a376ed733b
+Merge: ff3e1bc 8628833
+Author: Aditi <aditi.gautam78@gmail.com>
+Date:   Fri Aug 7 16:41:05 2015 +0530
+
+    Merge https://github.com/cps-monsoon-2015/lab1
+
+commit ff3e1bc00991976ed21245e2a71b3f787a0a7d8a
+Author: Aditi <aditi.gautam78@gmail.com>
+Date:   Fri Aug 7 16:36:08 2015 +0530
+
+    added information about aditi
+
+commit 8628833242f83f9ce3ef0e905e46ecef128213c5
+Author: Janani <janani.sundar@students.iiit.ac.in>
+Date:   Wed Aug 5 01:42:37 2015 +0530
+
+    Eighth commit - after correcting file names
+
+commit 43b2378376a4b492699991d5012d712d4797476a
+Author: Janani <janani.sundar@students.iiit.ac.in>
+Date:   Wed Aug 5 01:08:28 2015 +0530
+
+aditi@aditi-HP-15-Notebook-PC:~/Desktop$ ui
+The program 'ui' is currently not installed. You can install it by typing:
+sudo apt-get install userinfo
+aditi@aditi-HP-15-Notebook-PC:~/Desktop$ git status
+On branch master
+nothing to commit, working directory clean
+aditi@aditi-HP-15-Notebook-PC:~/Desktop$ git merge git pull origin master
+merge: git - not something we can merge
+aditi@aditi-HP-15-Notebook-PC:~/Desktop$ git merge origin/master
+merge: origin/master - not something we can merge
+aditi@aditi-HP-15-Notebook-PC:~/Desktop$ git merge https://github.com/cps-monsoon-2015/lab1
+merge: https://github.com/cps-monsoon-2015/lab1 - not something we can merge
+aditi@aditi-HP-15-Notebook-PC:~/Desktop$ git push https://github.com/cps-monsoon-2015/lab1
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 1.20 KiB | 0 bytes/s, done.
+Total 9 (delta 1), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   8628833..9de67aa  master -> master
+aditi@aditi-HP-15-Notebook-PC:~/Desktop$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    README.md
+	deleted:    explanations/sample
+	deleted:    explanations/sample.pdf
+	deleted:    participants.md
+	deleted:    participants.rkt
+	deleted:    participants/201460623
+	deleted:    participants/<roll_no>
+	deleted:    participants/Aboutme.txt
+	deleted:    tips.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+aditi@aditi-HP-15-Notebook-PC:~/Desktop$ git log
+commit 9de67aa6aefaf61ce06fa163d66a94a376ed733b
+Merge: ff3e1bc 8628833
+Author: Aditi <aditi.gautam78@gmail.com>
+Date:   Fri Aug 7 16:41:05 2015 +0530
+
+    Merge https://github.com/cps-monsoon-2015/lab1
+
+commit ff3e1bc00991976ed21245e2a71b3f787a0a7d8a
+Author: Aditi <aditi.gautam78@gmail.com>
+Date:   Fri Aug 7 16:36:08 2015 +0530
+
+    added information about aditi
+
+commit 8628833242f83f9ce3ef0e905e46ecef128213c5
+Author: Janani <janani.sundar@students.iiit.ac.in>
+Date:   Wed Aug 5 01:42:37 2015 +0530
+
+    Eighth commit - after correcting file names
+
+commit 43b2378376a4b492699991d5012d712d4797476a
+Author: Janani <janani.sundar@students.iiit.ac.in>
+Date:   Wed Aug 5 01:08:28 2015 +0530
+
+aditi@aditi-HP-15-Notebook-PC:~/Desktop$ 
+aditi@aditi-HP-15-Notebook-PC:~/Desktop$ gedit participants.rkt
+aditi@aditi-HP-15-Notebook-PC:~/Desktop$ cd lab1
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ gedit participants.rkt
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.rkt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560543_explanation.txt
+	participants.rkt~
+	participants/201560543.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ racket -f participants.rkt
+The program 'racket' is currently not installed. You can install it by typing:
+sudo apt-get install racket
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ sudo apt-get install racket
+[sudo] password for aditi: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  racket-common racket-doc
+The following NEW packages will be installed:
+  racket racket-common racket-doc
+0 upgraded, 3 newly installed, 0 to remove and 369 not upgraded.
+Need to get 52.7 MB of archives.
+After this operation, 335 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/universe racket-common all 5.3.6+dfsg1-1 [30.7 MB]
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty/universe racket amd64 5.3.6+dfsg1-1 [1,585 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty/universe racket-doc all 5.3.6+dfsg1-1 [20.5 MB]
+Fetched 52.7 MB in 15s (3,366 kB/s)                                            
+Selecting previously unselected package racket-common.
+(Reading database ... 164597 files and directories currently installed.)
+Preparing to unpack .../racket-common_5.3.6+dfsg1-1_all.deb ...
+Unpacking racket-common (5.3.6+dfsg1-1) ...
+Selecting previously unselected package racket.
+Preparing to unpack .../racket_5.3.6+dfsg1-1_amd64.deb ...
+Unpacking racket (5.3.6+dfsg1-1) ...
+Selecting previously unselected package racket-doc.
+Preparing to unpack .../racket-doc_5.3.6+dfsg1-1_all.deb ...
+Unpacking racket-doc (5.3.6+dfsg1-1) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Processing triggers for gnome-menus (3.10.1-0ubuntu2) ...
+Processing triggers for desktop-file-utils (0.22-1ubuntu1) ...
+Processing triggers for bamfdaemon (0.5.1+14.04.20140409-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for mime-support (3.54ubuntu1.1) ...
+Setting up racket-common (5.3.6+dfsg1-1) ...
+Setting up racket (5.3.6+dfsg1-1) ...
+Setting up racket-doc (5.3.6+dfsg1-1) ...
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ racket -f participants.rkt
+1 201212345 Gugan Vignesh Servaraj
+2 201460623 Janani Sundar
+3 201560543 Aditi Gautam
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git add participants.rkt
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   participants.rkt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560543_explanation.txt
+	participants.rkt~
+	participants/201560543.txt
+
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git commit -m "added name to participants list"
+[master 1bca3e2] added name to participants list
+ 1 file changed, 1 insertion(+)
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+To https://github.com/cps-monsoon-2015/lab1
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/cps-monsoon-2015/lab1'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+To https://github.com/cps-monsoon-2015/lab1
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/cps-monsoon-2015/lab1'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git fetch master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git pull https://github.com/cps-monsoon-2015/lab1
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 9 (delta 1), reused 8 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+From https://github.com/cps-monsoon-2015/lab1
+ * branch            HEAD       -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ lab1/README.md                              |   4 +++
+ lab1/explanations/201560543_explanation.txt |   7 +++++
+ lab1/explanations/sample                    |  38 ++++++++++++++++++++++++++++
+ lab1/explanations/sample.pdf                | Bin 0 -> 17997 bytes
+ lab1/participants.md                        |   7 +++++
+ lab1/participants.rkt                       |  17 +++++++++++++
+ lab1/participants/201460623                 |   3 +++
+ lab1/participants/201560543.txt             |   2 ++
+ lab1/participants/<roll_no>                 |   3 +++
+ lab1/participants/Aboutme.txt               |  14 ++++++++++
+ lab1/tips.md                                |  16 ++++++++++++
+ 11 files changed, 111 insertions(+)
+ create mode 100644 lab1/README.md
+ create mode 100644 lab1/explanations/201560543_explanation.txt
+ create mode 100644 lab1/explanations/sample
+ create mode 100644 lab1/explanations/sample.pdf
+ create mode 100644 lab1/participants.md
+ create mode 100644 lab1/participants.rkt
+ create mode 100644 lab1/participants/201460623
+ create mode 100644 lab1/participants/201560543.txt
+ create mode 100644 lab1/participants/<roll_no>
+ create mode 100644 lab1/participants/Aboutme.txt
+ create mode 100644 lab1/tips.md
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ push origin master
+The program 'push' is currently not installed. You can install it by typing:
+sudo apt-get install heimdal-clients
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 548 bytes | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   9de67aa..e27de0b  master -> master
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560543_explanation.txt
+	participants.md~
+	participants.rkt~
+	participants/201560543.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git add participants.md
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   participants.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560543_explanation.txt
+	participants.md~
+	participants.rkt~
+	participants/201560543.txt
+
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git commit -m "added name to participants list" 
+[master 698f94b] added name to participants list
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 324 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   e27de0b..698f94b  master -> master
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git rm -rf lab1
+rm 'lab1/README.md'
+rm 'lab1/explanations/201560543_explanation.txt'
+rm 'lab1/explanations/sample'
+rm 'lab1/explanations/sample.pdf'
+rm 'lab1/participants.md'
+rm 'lab1/participants.rkt'
+rm 'lab1/participants/201460623'
+rm 'lab1/participants/201560543.txt'
+rm 'lab1/participants/<roll_no>'
+rm 'lab1/participants/Aboutme.txt'
+rm 'lab1/tips.md'
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git add .
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    lab1/README.md
+	deleted:    lab1/explanations/201560543_explanation.txt
+	deleted:    lab1/explanations/sample
+	deleted:    lab1/explanations/sample.pdf
+	deleted:    lab1/participants/201460623
+	deleted:    lab1/participants/201560543.txt
+	deleted:    lab1/participants/<roll_no>
+	deleted:    lab1/participants/Aboutme.txt
+	deleted:    lab1/tips.md
+	renamed:    lab1/participants.md -> participants.md~
+	renamed:    lab1/participants.rkt -> participants.rkt~
+
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git commit -m "removed the duplicated folder"
+[master 7cddea5] removed the duplicated folder
+ 11 files changed, 1 insertion(+), 87 deletions(-)
+ delete mode 100644 lab1/README.md
+ delete mode 100644 lab1/explanations/201560543_explanation.txt
+ delete mode 100644 lab1/explanations/sample
+ delete mode 100644 lab1/explanations/sample.pdf
+ delete mode 100644 lab1/participants/201460623
+ delete mode 100644 lab1/participants/201560543.txt
+ delete mode 100644 lab1/participants/<roll_no>
+ delete mode 100644 lab1/participants/Aboutme.txt
+ delete mode 100644 lab1/tips.md
+ rename lab1/participants.md => participants.md~ (87%)
+ rename lab1/participants.rkt => participants.rkt~ (100%)
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 474 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   698f94b..7cddea5  master -> master
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git rm participants.md~
+rm 'participants.md~'
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ ls
+explanations  participants.md   participants.rkt~  tips.md
+participants  participants.rkt  README.md
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ rm participants.rkt~
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ ls
+explanations  participants.md   README.md
+participants  participants.rkt  tips.md
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git rm participants.rkt~
+rm 'participants.rkt~'
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ ls
+explanations  participants.md   README.md
+participants  participants.rkt  tips.md
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git commit -m "edited"
+[master a2f1877] edited
+ 2 files changed, 25 deletions(-)
+ delete mode 100644 participants.md~
+ delete mode 100644 participants.rkt~
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 222 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   7cddea5..a2f1877  master -> master
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560543_explanation.txt
+	participants/201560543.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git add participants/201560543.txtaditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   participants/201560543.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560543_explanation.txt
+
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git add explanations/201560543_explanation.txt
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ gits status
+No command 'gits' found, did you mean:
+ Command 'gitps' from package 'gnuit' (universe)
+ Command 'gist' from package 'yorick' (universe)
+ Command 'gitso' from package 'gitso' (universe)
+ Command 'giws' from package 'giws' (universe)
+ Command 'git' from package 'git' (main)
+ Command 'gitk' from package 'gitk' (main)
+ Command 'gitg' from package 'gitg' (universe)
+gits: command not found
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   explanations/201560543_explanation.txt
+	new file:   participants/201560543.txt
+
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git commit -m "added information about Aditi" 
+[master b871c2e] added information about Aditi
+ 2 files changed, 9 insertions(+)
+ create mode 100644 explanations/201560543_explanation.txt
+ create mode 100644 participants/201560543.txt
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/cps-monsoon-2015/lab1/'
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 815 bytes | 0 bytes/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   a2f1877..b871c2e  master -> master
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ ^C
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ 
+
+
+Above are the commands that I used to complete the excercise 1.
+
+-to make file we use > file name
+-to edit is I used Gedit file name
+-Cd is used to navigate through folders
+-git init for initializing git repository
+-git add for staging the changes
+-git commit for committing those changes
+-git log for the log
+-git pull for synching the changes with the master repository and local respository.
+-git push to send the changes to master repository
+-rm is used to remove the unwanted files or folders
+-when we first use the push command it gives an error but the error is resolved after using the pull command.
+-also tried git merge and fetch command initially to avoid opening the nano editor.
