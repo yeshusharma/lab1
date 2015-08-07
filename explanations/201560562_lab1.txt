@@ -1,0 +1,440 @@
+Anjali Verma
+201560562
+MTech(Bioinformatics)
+
+The details of the commands, their output and my inferences are written in the end.
+
+aditi@aditi-HP-15-Notebook-PC:~$ cd Desktop
+aditi@aditi-HP-15-Notebook-PC:~/Desktop$ git init
+Reinitialized existing Git repository in /home/aditi/Desktop/.git/
+aditi@aditi-HP-15-Notebook-PC:~/Desktop$ git clone https://github.com/cps-monsoon-2015/lab1
+Cloning into 'lab1'...
+remote: Counting objects: 98, done.
+remote: Compressing objects: 100% (73/73), done.
+remote: Total 98 (delta 39), reused 78 (delta 19), pack-reused 0
+Unpacking objects: 100% (98/98), done.
+Checking connectivity... done.
+aditi@aditi-HP-15-Notebook-PC:~/Desktop$ cd lab1
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ gedit explanations/201560562_explanation.txt
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ gedit explanation/201560562_explanation.txt
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ gedit explanations/201560562_explanation.txt
+
+(gedit:12363): Gtk-WARNING **: GtkScrolledWindow 0x14ed880 is mapped but visible child GtkScrollbar 0x14f69e0 is not mapped
+
+(gedit:12363): Gtk-WARNING **: GtkScrolledWindow 0x14ed880 is mapped but visible child GtkScrollbar 0x14f6be0 is not mapped
+
+(gedit:12363): Gtk-WARNING **: GtkScrolledWindow 0x14ed880 is mapped but visible child GtkScrollbar 0x14f69e0 is not mapped
+
+(gedit:12363): Gtk-WARNING **: GtkScrolledWindow 0x14ed880 is mapped but visible child GtkScrollbar 0x14f6be0 is not mapped
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   explanations/201560562_explanation.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560562_explanation.txt~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git add explanations/201560562_explanation.txt
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   explanations/201560562_explanation.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560562_explanation.txt~
+
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ gedit participants/201560562.txt
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   explanations/201560562_explanation.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants/201560562.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560562_explanation.txt~
+	participants/201560562.txt~
+
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git add participants/201560562.txtaditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   explanations/201560562_explanation.txt
+	modified:   participants/201560562.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560562_explanation.txt~
+	participants/201560562.txt~
+
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git commit -m "added information about anjali"
+[master b7da668] added information about anjali
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git push https://github.com/cps-monsoon-2015/lab1
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 481 bytes | 0 bytes/s, done.
+Total 6 (delta 5), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   633e507..b7da668  master -> master
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ gedit participants.rkt
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ racket -f participants.rkt
+1 201560543 Aditi Gautam
+2 201560562 Anjali Verma
+3 201212345 Gugan Vignesh Servaraj
+4 201460623 Janani Sundar
+5 201560557 Sudhanshu Kumar Singh
+
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git add participants.rkt
+
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git log
+commit b7da66884c8b485cf7e7f708d7a94f8741e6efc7
+Author: Aditi <aditi.gautam78@gmail.com>
+Date:   Fri Aug 7 22:06:24 2015 +0530
+
+    added information about anjali
+
+commit 633e5077e1e7af16ed5b985ca7ea40f7c3527d23
+Author: sudhanshu <sudhanshu2405@gmail.com>
+Date:   Sat Aug 8 08:32:03 2015 +0530
+
+    Information about Sudhanshu
+
+commit c59cb2d56432977ed0e98e0ea8c2ce0ae733bb8d
+Author: sudhanshu <sudhanshu2405@gmail.com>
+Date:   Sat Aug 8 07:45:54 2015 +0530
+
+    Information about Sudhanshu
+
+commit 9108ce3dc0de2ca77592dde6a9da046eda9831c3
+Author: sudhanshu <sudhanshu2405@gmail.com>
+Date:   Sat Aug 8 07:16:01 2015 +0530
+
+    Information about Sudhanshu
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ gedit participants.md
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560562_explanation.txt~
+	participants.md~
+	participants/201560562.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git add participants.md
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560562_explanation.txt~
+	participants.md~
+	participants/201560562.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git add participants.md
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560562_explanation.txt~
+	participants.md~
+	participants/201560562.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ gedit participants.md
+
+(gedit:12453): Gtk-WARNING **: GtkScrolledWindow 0x2451880 is mapped but visible child GtkScrollbar 0x2458a20 is not mapped
+
+(gedit:12453): Gtk-WARNING **: GtkScrolledWindow 0x2451880 is mapped but visible child GtkScrollbar 0x2458c20 is not mapped
+
+(gedit:12453): Gtk-WARNING **: GtkScrolledWindow 0x2451880 is mapped but visible child GtkScrollbar 0x2458a20 is not mapped
+
+(gedit:12453): Gtk-WARNING **: GtkScrolledWindow 0x2451880 is mapped but visible child GtkScrollbar 0x2458c20 is not mapped
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560562_explanation.txt~
+	participants.md~
+	participants/201560562.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git add participants.md
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560562_explanation.txt~
+	participants.md~
+	participants/201560562.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git add participants.md~
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   participants.md~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560562_explanation.txt~
+	participants/201560562.txt~
+
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git commit -m " "
+Aborting commit due to empty commit message.
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git commit -m "added participants"[master 118be1b] added participants
+ 1 file changed, 9 insertions(+)
+ create mode 100644 participants.md~
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560562_explanation.txt~
+	participants/201560562.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git push https://github.com/cps-monsoon-2015/lab1
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 229 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   b7da668..118be1b  master -> master
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git pull https://github.com/cps-monsoon-2015/lab1
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 9 (delta 1), reused 8 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1/explanations$ gedit 201560562_lab1.txt
+
+The following git commands were used:
+
+1. $ git init
+
+Inference - created an empty and local git repository.
+
+2. $ gedit <filename>
+Eg: $ gedit explanations/201560562_explanation.txt
+    $ gedit participants/201560562.txt
+
+Inference - Files can be created/edited using this.
+
+3. $ git add <filename>
+Eg: $ git add explanations/201560562_explanation.txt
+    $ git add participants/201560562.txt
+
+Inference - Added files to the staging area.
+
+4. $ git commit -m "Added first commit"
+
+Eg: $ git commit -m "added information about anjali"
+Output:
+[master b7da668] added information about anjali
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+aditi@aditi-HP-15-Notebook-PC:~/Desktop/lab1$ git push https://github.com/cps-monsoon-2015/lab1
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Inference - Saved the changes to the local repository. 
+
+5. $ git status
+Output:
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   explanations/201560562_explanation.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants/201560562.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560562_explanation.txt~
+	participants/201560562.txt~
+
+Inference - Showed the status of files in the local repository.
+
+6. $ git log
+Output:
+commit b7da66884c8b485cf7e7f708d7a94f8741e6efc7
+Author: Aditi <aditi.gautam78@gmail.com>
+Date:   Fri Aug 7 22:06:24 2015 +0530
+
+    added information about anjali
+
+commit 633e5077e1e7af16ed5b985ca7ea40f7c3527d23
+Author: sudhanshu <sudhanshu2405@gmail.com>
+Date:   Sat Aug 8 08:32:03 2015 +0530
+
+    Information about Sudhanshu
+
+commit c59cb2d56432977ed0e98e0ea8c2ce0ae733bb8d
+Author: sudhanshu <sudhanshu2405@gmail.com>
+Date:   Sat Aug 8 07:45:54 2015 +0530
+
+    Information about Sudhanshu
+
+commit 9108ce3dc0de2ca77592dde6a9da046eda9831c3
+Author: sudhanshu <sudhanshu2405@gmail.com>
+Date:   Sat Aug 8 07:16:01 2015 +0530
+
+    Information about Sudhanshu
+
+Inference - Showed the commits that have been done.
+
+7. $ git push https://cps-monsoon-2015/lab1
+
+Inference - Pushed the files from the local repository to the master repository.
+
+8. $ git pull https://cps-monsoon-2015/lab1
+
+Inference - Brings the data of the master repository and merges it with the data of the local repository.
+
+
+
+
+
+
+
+
