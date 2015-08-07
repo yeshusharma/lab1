@@ -1,0 +1,346 @@
+Name-shreyali ganvir
+Roll no:201560597
+git init=to initiate the empty repository
+git status= to know the status of current file added.. wheather it is tracked,committed
+git commit=to confirm the chnages and add the commnet
+git push=to upload the files in remote repository
+git pull=to pull/extract the file from remote repository
+git push origin master=to put our local files into repository
+gedit=create and edit a file
+git log= to find the history 
+shreyali@shreyali-HP-2000-Notebook-PC:~$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.ICEauthority
+	.Xauthority
+	.bash_history
+	.bash_logout
+	.bashrc
+	.cache/
+	.compiz/
+	.config/
+	.dmrc
+	.gconf/
+	.gitconfig
+	.local/
+	.mozilla/
+	.profile
+	.xsession-errors
+	.xsession-errors.old
+	Documents/
+	examples.desktop
+	lab1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+shreyali@shreyali-HP-2000-Notebook-PC:~$ cd lab1
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1$ cd explanations
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1/explanations$ git add 201560597_explanations.txt
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1/explanations$ git commit -m"A brief note about the exersice 0 and 1 is being created by shreyali ganvir"
+[master 2d821f3] A brief note about the exersice 0 and 1 is being created by shreyali ganvir
+ 1 file changed, 15 insertions(+)
+ create mode 100644 explanations/201560597_explanations.txt
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1/explanations$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../201560522.explanation.txt
+	201560597_explanations.txt~
+	../participants/201560522.txt~
+	../participants/201560597_participants.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1/explanations$ git push https://github.com/cps-monsoon-2015/lab1
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: unable to access 'https://github.com/cps-monsoon-2015/lab1/': Could not resolve proxy: proxy.iiit.ac.in
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1/explanations$ git push https://github.com/cps-monsoon-2015/lab1
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: unable to access 'https://github.com/cps-monsoon-2015/lab1/': Could not resolve proxy: proxy.iiit.ac.in
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1/explanations$ git push https://github.com/cps-monsoon-2015/lab1
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+To https://github.com/cps-monsoon-2015/lab1
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/cps-monsoon-2015/lab1'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1/explanations$ git pull https://github.com/cps-monsoon-2015/lab1
+remote: Counting objects: 90, done.
+remote: Compressing objects: 100% (62/62), done.
+remote: Total 90 (delta 50), reused 67 (delta 27), pack-reused 0
+Unpacking objects: 100% (90/90), done.
+From https://github.com/cps-monsoon-2015/lab1
+ * branch            HEAD       -> FETCH_HEAD
+Removing participants/<roll_no>
+Merge made by the 'recursive' strategy.
+ explanations/201560516_explanation.txt  |  68 +++++
+ explanations/201560516_lab1.txt         | 286 +++++++++++++++++++++
+ explanations/201560558_explanations.txt |  19 ++
+ explanations/201560562_lab1.txt         | 440 ++++++++++++++++++++++++++++++++
+ explanations/201560573_explanation.txt  |   3 +
+ explanations/201560592_explanation.txt  |  14 +
+ explanations/201560625_explanations.txt |  10 +
+ participants.md                         |   4 +
+ participants.rkt                        |   5 +-
+ participants/201560516.txt              |   1 +
+ participants/201560558.txt              |   3 +
+ participants/201560573.txt              |   2 +
+ participants/201560592.txt              |   3 +
+ participants/201560625.txt              |   1 +
+ participants/201560625_participants.txt |   1 +
+ participants/<roll_no>                  |   3 -
+ 16 files changed, 859 insertions(+), 4 deletions(-)
+ create mode 100644 explanations/201560516_explanation.txt
+ create mode 100644 explanations/201560516_lab1.txt
+ create mode 100644 explanations/201560558_explanations.txt
+ create mode 100644 explanations/201560562_lab1.txt
+ create mode 100644 explanations/201560573_explanation.txt
+ create mode 100644 explanations/201560592_explanation.txt
+ create mode 100644 explanations/201560625_explanations.txt
+ create mode 100644 participants/201560516.txt
+ create mode 100644 participants/201560558.txt
+ create mode 100644 participants/201560573.txt
+ create mode 100644 participants/201560592.txt
+ create mode 100644 participants/201560625.txt
+ create mode 100644 participants/201560625_participants.txt
+ delete mode 100644 participants/<roll_no>
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1/explanations$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 22, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (16/16), 2.25 KiB | 0 bytes/s, done.
+Total 16 (delta 9), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   67a53e9..a4a97fd  master -> master
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1/explanations$ git status
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1/explanations$ cd ..
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560522_lab1.txt~
+	participants.rkt~
+	participants/201560522.txt~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 2.84 KiB | 0 bytes/s, done.
+Total 7 (delta 4), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   a5ac1c3..d8e90e9  master -> master
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560522_lab1.txt~
+	participants.rkt~
+	participants/201560522.txt~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ cd ..
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop$ cd ..
+shreyali@shreyali-HP-2000-Notebook-PC:~$ cd lab1
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1$ cd participants
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1/participants$ cd ..
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1$ gedit paticipants.rkt
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1$ gedit participants.rkt
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1$ git add participants.rkt
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   participants.rkt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	201560522.explanation.txt~
+	explanations/201560597_explanations.txt~
+	participants.rkt~
+	participants/201560522.txt~
+	participants/201560597_participants.txt~
+
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1$ git commit -m "Added corrections and modified"
+[master 9b93b71] Added corrections and modified
+ 1 file changed, 1 insertion(+)
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+To https://github.com/cps-monsoon-2015/lab1
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/cps-monsoon-2015/lab1'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1$ git pull
+remote: Counting objects: 61, done.
+remote: Compressing objects: 100% (36/36), done.
+remote: Total 61 (delta 36), reused 49 (delta 24), pack-reused 0
+Unpacking objects: 100% (61/61), done.
+From https://github.com/cps-monsoon-2015/lab1
+   a4a97fd..bb27bf4  master     -> origin/master
+Auto-merging participants.rkt
+Merge made by the 'recursive' strategy.
+ explanations/201560522_explanation.txt |   1 +
+ explanations/201560522_lab1.txt        | 356 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ explanations/201560617_explanation.txt |   1 +
+ explanations/201560619_explanation.txt |  16 +++
+ explanations/201560625_lab1.txt        | 124 ++++++++++++++++++++++
+ participants.md                        |   3 +
+ participants.rkt                       |   3 +
+ participants/201560522.txt             |   2 +-
+ participants/201560619.txt             |   2 +
+ 9 files changed, 507 insertions(+), 1 deletion(-)
+ create mode 100644 explanations/201560522_explanation.txt
+ create mode 100644 explanations/201560522_lab1.txt
+ create mode 100644 explanations/201560617_explanation.txt
+ create mode 100644 explanations/201560619_explanation.txt
+ create mode 100644 explanations/201560625_lab1.txt
+ create mode 100644 participants/201560619.txt
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 664 bytes | 0 bytes/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   bb27bf4..e9d74b2  master -> master
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1$ gedit participants.md
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1$ git add participants.md
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   participants.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	201560522.explanation.txt~
+	explanations/201560597_explanations.txt~
+	participants.rkt~
+	participants/201560522.txt~
+	participants/201560597_participants.txt~
+
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1$ git commit -m "Added info"
+[master a865493] Added info
+ 1 file changed, 1 insertion(+)
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1$ gedit 201560597_lab1.txt
+shreyali@shreyali-HP-2000-Notebook-PC:~/lab1$ gedit 201560597_lab1.txt
+                
+
+
