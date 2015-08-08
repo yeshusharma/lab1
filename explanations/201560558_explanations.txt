@@ -1,0 +1,19 @@
+Git acts as a distributed repository.It allows group of users to work on the same document.
+Everytime when user commits or saves the document it stores a reference snapshot.
+It keeps time logs of complete history of the document like when the socument is modified and why they are changed.
+
+commands
+=========
+git init --> initializes an empty repository
+
+git status --> It gives the untracked files that are yet to be commited or if file is already commited it displays a message that there are no files to commit
+
+git add <list of file> --> adds the list of files to the staging area
+git add -all --> adds all files
+git add *.txt --> adds all txt file
+git add doc1/*.txt --> adds txt files in doc directory
+git add "*.txt" --> adds all txt files in the whole project
+
+git commit -m "added as part of lab exercise" --> It commits the file and '-m' specifies the message to be displayed for readability purpose.
+
+git log --> It saves the history saves along the time frame.
