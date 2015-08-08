@@ -1,0 +1,286 @@
+Shweta 
+201560516
+
+Commands are in the end.
+
+shweta@shweta-R528-R728:~$ cd Desktop
+shweta@shweta-R528-R728:~/Desktop$ cd lab1
+shweta@shweta-R528-R728:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants/201560516.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+shweta@shweta-R528-R728:~/Desktop/lab1$ cd explanations
+shweta@shweta-R528-R728:~/Desktop/lab1/explanations$ ls
+201560543_explanation.txt  201560557_lab1.txt         sample.pdf
+201560543_lab1.txt         201560562_explanation.txt
+201560557_explanation.txt  sample
+shweta@shweta-R528-R728:~/Desktop/lab1/explanations$ gedit 201560516_explanation.txt
+shweta@shweta-R528-R728:~/Desktop/lab1/explanations$ >201560516_explanation.txt
+shweta@shweta-R528-R728:~/Desktop/lab1/explanations$ cd ..
+shweta@shweta-R528-R728:~/Desktop/lab1$ gedit 201560516_explanation.txt
+
+(gedit:7893): Gtk-WARNING **: GtkScrolledWindow 0x1374880 is mapped but visible child GtkScrollbar 0x137e9e0 is not mapped
+
+(gedit:7893): Gtk-WARNING **: GtkScrolledWindow 0x1374880 is mapped but visible child GtkScrollbar 0x137ebe0 is not mapped
+
+(gedit:7893): Gtk-WARNING **: GtkScrolledWindow 0x1374880 is mapped but visible child GtkScrollbar 0x137e9e0 is not mapped
+
+(gedit:7893): Gtk-WARNING **: GtkScrolledWindow 0x1374880 is mapped but visible child GtkScrollbar 0x137ebe0 is not mapped
+
+shweta@shweta-R528-R728:~/Desktop/lab1$ 
+shweta@shweta-R528-R728:~/Desktop/lab1$ cd expalnations
+bash: cd: expalnations: No such file or directory
+shweta@shweta-R528-R728:~/Desktop/lab1$ cd explanations
+shweta@shweta-R528-R728:~/Desktop/lab1/explanations$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../201560516_explanation.txt~
+	201560516_explanation.txt
+	201560516_explanation.txt~
+	../participants/201560516.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+shweta@shweta-R528-R728:~/Desktop/lab1/explanations$ git add 201560516_explanation.txt
+shweta@shweta-R528-R728:~/Desktop/lab1/explanations$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   201560516_explanation.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../201560516_explanation.txt~
+	201560516_explanation.txt~
+	../participants/201560516.txt~
+
+shweta@shweta-R528-R728:~/Desktop/lab1/explanations$ git commit -m " Added info about shweta"
+[master 9da333b]  Added info about shweta
+ 1 file changed, 68 insertions(+)
+ create mode 100644 explanations/201560516_explanation.txt
+shweta@shweta-R528-R728:~/Desktop/lab1/explanations$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+To https://github.com/cps-monsoon-2015/lab1
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/cps-monsoon-2015/lab1'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+shweta@shweta-R528-R728:~/Desktop/lab1/explanations$ cd..
+cd..: command not found
+shweta@shweta-R528-R728:~/Desktop/lab1/explanations$ cd ..
+shweta@shweta-R528-R728:~/Desktop/lab1$ push origin master
+The program 'push' is currently not installed. You can install it by typing:
+sudo apt-get install heimdal-clients
+shweta@shweta-R528-R728:~/Desktop/lab1$ cps-monsoon-2015
+cps-monsoon-2015: command not found
+shweta@shweta-R528-R728:~/Desktop/lab1$ 2015-monsoon-cps
+2015-monsoon-cps: command not found
+shweta@shweta-R528-R728:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+To https://github.com/cps-monsoon-2015/lab1
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/cps-monsoon-2015/lab1'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+shweta@shweta-R528-R728:~/Desktop/lab1$ git pull https://github.com/cps-monsoon-2015/lab1
+remote: Counting objects: 68, done.
+remote: Compressing objects: 100% (45/45), done.
+remote: Total 68 (delta 40), reused 50 (delta 22), pack-reused 0
+Unpacking objects: 100% (68/68), done.
+From https://github.com/cps-monsoon-2015/lab1
+ * branch            HEAD       -> FETCH_HEAD
+Removing participants/<roll_no>
+Merge made by the 'recursive' strategy.
+ explanations/201560558_explanations.txt |  19 ++
+ explanations/201560562_lab1.txt         | 440 ++++++++++++++++++++++++++++++++
+ explanations/201560573_explanation.txt  |   3 +
+ explanations/201560592_explanation.txt  |  14 +
+ explanations/201560625_explanations.txt |  10 +
+ participants.md                         |   3 +
+ participants.rkt                        |   4 +-
+ participants/201560558.txt              |   3 +
+ participants/201560573.txt              |   2 +
+ participants/201560592.txt              |   3 +
+ participants/201560625.txt              |   1 +
+ participants/201560625_participants.txt |   1 +
+ participants/<roll_no>                  |   3 -
+ 13 files changed, 502 insertions(+), 4 deletions(-)
+ create mode 100644 explanations/201560558_explanations.txt
+ create mode 100644 explanations/201560562_lab1.txt
+ create mode 100644 explanations/201560573_explanation.txt
+ create mode 100644 explanations/201560592_explanation.txt
+ create mode 100644 explanations/201560625_explanations.txt
+ create mode 100644 participants/201560558.txt
+ create mode 100644 participants/201560573.txt
+ create mode 100644 participants/201560592.txt
+ create mode 100644 participants/201560625.txt
+ create mode 100644 participants/201560625_participants.txt
+ delete mode 100644 participants/<roll_no>
+shweta@shweta-R528-R728:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 18, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 2.25 KiB | 0 bytes/s, done.
+Total 12 (delta 7), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   966182c..b890b0b  master -> master
+shweta@shweta-R528-R728:~/Desktop/lab1$ gedit participants.md
+
+(gedit:9541): Gtk-WARNING **: GtkScrolledWindow 0x15f5880 is mapped but visible child GtkScrollbar 0x16009e0 is not mapped
+
+(gedit:9541): Gtk-WARNING **: GtkScrolledWindow 0x15f5880 is mapped but visible child GtkScrollbar 0x1600be0 is not mapped
+
+(gedit:9541): Gtk-WARNING **: GtkScrolledWindow 0x15f5880 is mapped but visible child GtkScrollbar 0x16009e0 is not mapped
+
+(gedit:9541): Gtk-WARNING **: GtkScrolledWindow 0x15f5880 is mapped but visible child GtkScrollbar 0x1600be0 is not mapped
+shweta@shweta-R528-R728:~/Desktop/lab1$ git add participants.md
+shweta@shweta-R528-R728:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   participants.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	201560516_explanation.txt~
+	explanations/201560516_explanation.txt~
+	participants/201560516.txt~
+
+shweta@shweta-R528-R728:~/Desktop/lab1$ git commit -m " Added info about Shweta"[master a39101f]  Added info about Shweta
+ 1 file changed, 1 insertion(+)
+shweta@shweta-R528-R728:~/Desktop/lab1$ gedit participants.rkt
+
+(gedit:9558): Gtk-CRITICAL **: _gtk_widget_captured_event: assertion 'WIDGET_REALIZED_FOR_EVENT (widget, event)' failed
+shweta@shweta-R528-R728:~/Desktop/lab1$ git add participants.rkt
+shweta@shweta-R528-R728:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   participants.rkt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	201560516_explanation.txt~
+	explanations/201560516_explanation.txt~
+	participants.rkt~
+	participants/201560516.txt~
+
+shweta@shweta-R528-R728:~/Desktop/lab1$ racket -f participants.rkt
+The program 'racket' is currently not installed. You can install it by typing:
+sudo apt-get install racket
+shweta@shweta-R528-R728:~/Desktop/lab1$ sudo apt-get install racket
+[sudo] password for shweta: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  racket-common racket-doc
+The following NEW packages will be installed:
+  racket racket-common racket-doc
+0 upgraded, 3 newly installed, 0 to remove and 365 not upgraded.
+Need to get 52.7 MB of archives.
+After this operation, 335 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/universe racket-common all 5.3.6+dfsg1-1 [30.7 MB]
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty/universe racket amd64 5.3.6+dfsg1-1 [1,585 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty/universe racket-doc all 5.3.6+dfsg1-1 [20.5 MB]
+Fetched 52.7 MB in 4s (10.8 MB/s)      
+Selecting previously unselected package racket-common.
+(Reading database ... 164535 files and directories currently installed.)
+Preparing to unpack .../racket-common_5.3.6+dfsg1-1_all.deb ...
+Unpacking racket-common (5.3.6+dfsg1-1) ...
+Selecting previously unselected package racket.
+Preparing to unpack .../racket_5.3.6+dfsg1-1_amd64.deb ...
+Unpacking racket (5.3.6+dfsg1-1) ...
+Selecting previously unselected package racket-doc.
+Preparing to unpack .../racket-doc_5.3.6+dfsg1-1_all.deb ...
+Unpacking racket-doc (5.3.6+dfsg1-1) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Processing triggers for gnome-menus (3.10.1-0ubuntu2) ...
+Processing triggers for desktop-file-utils (0.22-1ubuntu1) ...
+Processing triggers for bamfdaemon (0.5.1+14.04.20140409-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for mime-support (3.54ubuntu1.1) ...
+Setting up racket-common (5.3.6+dfsg1-1) ...
+Setting up racket (5.3.6+dfsg1-1) ...
+Setting up racket-doc (5.3.6+dfsg1-1) ...
+shweta@shweta-R528-R728:~/Desktop/lab1$ git commit -m " Added info about Shweta"[master a1b781a]  Added info about Shweta
+ 1 file changed, 1 insertion(+)
+shweta@shweta-R528-R728:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 9, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 689 bytes | 0 bytes/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   b890b0b..a1b781a  master -> master
+shweta@shweta-R528-R728:~/Desktop/lab1$ cd explanations
+shweta@shweta-R528-R728:~/Desktop/lab1/explanations$ gedit 201560516_lab1.txt
+
+Commands:
+1)$ git status
+ It tells us that we have a new file that has not been tracked.
+
+We track it by following command .
+
+
+2)$ git add  "participants/201560516.txt"
+
+Now it has been tracked & ready to commit by
+
+3)$ git commit -m " added details about shweta participants/ 201560516.txt"
+
+
+4)$ git status - It checked status.
+
+5) $ git log - It gives history.
+
