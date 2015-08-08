@@ -1,0 +1,68 @@
+GIT is Distributed version control system, it allows groups of people to work on same document at same time.Git is used whenever we make changes in a filelocally & at same time, some other person is also using that file then, So as to avoid overwriting each other file.So basically it merge two files. It also works as time capsule i.e. it keeps history of each filesstored in it according to timeit has been pushed.
+ GIT is a distributed repository in the sense that everybody has a complete repository & each file in the reporisory is describedwith its author and email. 
+It is command line interface you can work on GIT offline.
+We first Installed,  and update gitin terminal by various command
+sudo apt-get update
+sudo apt-get install git
+$git config
+ first we set GIT hub account by setting our git name & git email. so as to take credit of our work. 
+for name
+$ git config --global user.name "shweta"
+
+for email
+$ git config --global user.name "shwetakuls@gmail.com"
+
+first we initialize, so as to create a empty repsitory in our local system in a hidden .git directory.
+
+command:- $ git init
+result:- Initialized empty GIT repository in /.git/
+
+Success!
+
+then we cloned it with our global repository which is http:// github.com/ cps-monsoon-2015/lab1
+
+Command:- $git clone http://github.com/lab1.
+
+In the lab1, we have participants directory.
+lab1 was saved in desktop
+
+In desktop, we had lab1 folder in lab1, we went to participant directory.
+
+$ cd desktop 
+$ cd lab1
+$ cd participants.
+
+then in participants directory
+I type my command so as to create a text folder entitled my roll number by
+  
+$ gedit participants 201560516_participants.txt
+
+I wrote my Introduction & then saved it.
+then i checked status by,
+
+$ git status
+ It tells us that we have a new file that has not been tracked.
+
+We track it by following command .
+
+Commands:
+$ git add  "participants/201560516.txt"
+
+Now it has been tracked & ready to commit by
+
+$ git commit -m " added details about shweta participants/ 201560516.txt"
+
+then when I checked its status 
+
+$ git status 
+It showed 
+
+" on branch master.
+Your branch is ahead of 'origin/master' by 1 commit.
+( Use  "git push" to publish your local commits)
+
+then i checked history by
+$ git log
+
+then i again opened  a file explanation in lab1 byfollowing same procedure & added my observation inthe lab and in the video.
+
