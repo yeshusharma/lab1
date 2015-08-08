@@ -1,0 +1,10 @@
+My explanatory note:
+
+The things that I have learnt in the lab1 is about the VERSION CONTROL SYSTEMS.Through this system we can merge the files and also it can keep records of the files changed as and when if someone makes,i.e. works as a time capsule.We get a complete history of the files that has been changed with complete details as when the file was changed or why did they changed.A version control system that was studied in Lab1 was GIT.It is distributed version control system.In the GIT we can commit fast,work offline and everybody can have a copy of the file so that if one gets destroyed then others have the copy of the file.Git is applied in the companies where large projects are being handled with teams managed.We created a clone of the global repository "http://www.github.com/cps-monsoon-2015/lab1" by the git clone command.Entered the participants common directory and created a file name with my Roll No.201560625 and also added explanations.Also I learnt about the various commands like git add  "adds any character"
+              git status "tracks files"
+              git commit  "saves the changes"
+              git init    "initialises the git"
+              git log     "tells the history and time lapse of the whole work done"
+              git clone   "makes copy of the repository".
+              git push    "it places the changes in the repository so that everyone can see"
+              git pull    "pulls the file from the online repository".
