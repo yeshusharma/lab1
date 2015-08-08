@@ -1,0 +1,36 @@
+cat > 201560557_explanation.txt		#creates a file 201560557_explanation.txt added appropriate details and pressed ctrl+D to exit
+
+mkdir git_lab				#created directory where git related work will be stored
+cd git_lab				#command used to get into the directory
+git init 				#This command initializes empty git respository in /home/sudhanshu/git_lab/.git/
+git clone https://github.com/cps-monsoon-2015/lab1		#Used for cloning online repository to my local system
+cd /home/sudhanshu/git_lab/lab1/participants			#command used to get into the participants directory
+cat > 201560557				#creates a file 201560557 added name,rollno,course,email and pressed ctrl+D to exit
+git status				#shows nothing added to commit but untracked files present this is because I haven't added any file to staging area
+git add 201560557			#adds the file named 201560557 to staging area 
+git status				#shows the name of the file(201560557) on which changes is to be commited
+cd ..					#used this command to go to the directory where 201560557_explanation.txt is present which is home/sudhanshu
+cp 201560557_explanation.txt /home/sudhanshu/git_lab/lab1/explanations		#used for copying file home/sudhanshu folder to /home/sudhanshu/git_lab/lab1/explanations
+cd /home/sudhanshu/git_lab/lab1/explanations		#command used to get into the explanations directory
+git add 201560557_explanation.txt 	#adds the file named 201560557_explanation.txt to staging area 
+git status 				#shows the name of the file(201560557,201560557_explanation.txt) on which changes is to be commited
+git commit -m "Information about Sudhanshu"		#Files which were added are moved to repository along with the message attached
+git status				#shows that we have made one commit and no file is being tracked currently
+git push https://github.com/cps-monsoon-2015/lab1	#pushes the commited files to online repository 			
+git pull https://github.com/cps-monsoon-2015/lab1	#pulled files in the local directory which were not present before but were updated in the online repository
+git log					#it showed the commit logs done by various users
+cd /home/sudhanshu/git_lab/lab1		#gone to the lab1 folder
+gedit participants.md			#edited participants.md and put my name into it
+git add participants.md			#adds the file named participants.md to staging area 
+git commit -m "Information about Sudhanshu"		#Files which were added are moved to repository along with the message attached
+git push https://github.com/cps-monsoon-2015/lab1	#pushes the commited files to online repository 
+gedit participants.rkt			#added name and roll into the file and saved it
+racket -f participants.rkt		#on running the file it printed my name and roll along with other people
+git add participants.rkt		#adds the file named participants.rkt to staging area
+cd explanation				#goes to explanation folder
+cat > 201560557_lab1.txt		#creates a file 201560557_lab1.txt added appropriate details and pressed ctrl+D to exit
+git add 201560557_lab1.txt		#adds the file named 201560557_lab1.txt to staging area
+gedit 201560557_explanation.txt		#made appropriate changes in it and saved
+git add 201560557_explanation.txt 	#adds the file named 201560557_explanation.txt to staging area 
+git commit -m "Information about Sudhanshu"		#Files which were added are moved to repository along with the message attached
+git push https://github.com/cps-monsoon-2015/lab1	#pushes the commited files to online repository 
