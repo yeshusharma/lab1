@@ -1,0 +1,3 @@
+This is my first experience with linux and git.
+The tutorial showed the use of push and pull commands. It also showed using diff command to see recent changes.
+I'm trying to get hold of git.

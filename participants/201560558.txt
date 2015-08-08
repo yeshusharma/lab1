@@ -1,0 +1,3 @@
+Name : Gitanjali Vaidya
+Course : PG1 Bioinformatics 
+commit as part of lab1 exercise.

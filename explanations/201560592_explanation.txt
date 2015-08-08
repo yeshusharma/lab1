@@ -1,0 +1,14 @@
+Name : Vinay Kusuma, 201560592 , Mtech Bioinformatics PG1
+Topic: Git
+
+1) Git is an important tool which enables the users to share their code and work together on a particular project. It is a fast and distrubuted system.
+2) Suppose Person A is working on a code and he saves that code file on a repository on net . B can access that code and make changes , such changes get overwritten and sometimes are detrimenal to project.
+3) Git deals with such collabration issues by promoting use of distributed repository wherein A will have has his own local repository , where he saves his work and B has his own local repository, they can share their code and work together by uploading it on remote repository  , but their original code is with them .
+4) Incase the repository get corrupted , they can even share the code files .
+5) Git also maintains a time log , where all changes are recorded and user can use it to check the time , date and author of such changes .
+
+6) some commands 
+a) git init - it initalizes the process by creating an empty repository.
+b) git clone - it is used to clone files from final repository.
+c) git merge - it is used to merge files.
+d) git push - it is used to push the file into remote repository.
