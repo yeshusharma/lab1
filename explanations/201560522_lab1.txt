@@ -1,0 +1,356 @@
+Tejeswi Muthireddy
+Roll number : 201560522
+Commands are written at the end
+Git init - to initialize
+git clone - to lone the repository to local repository
+git add - to add files in local folder
+gedit - to create a file and edit
+git commit -m - to commit the changes
+git status - to check the status of files
+git push origin master - to push the files from local folder to online repository
+git pull - to pull files from the repository 
+
+
+shreyali@shreyali-HP-2000-Notebook-PC:~$ cd Desktop
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop$ git init
+Initialized empty Git repository in /home/shreyali/Desktop/.git/
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop$ git clone https://github.com/ cps-monsoon-2015/lab1
+Cloning into 'cps-monsoon-2015/lab1'...
+fatal: unable to access 'https://github.com/': Could not resolve proxy: proxy.iiit.ac.in
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop$ cd lab1
+bash: cd: lab1: No such file or directory
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop$ git clone https://github.com/ cps-monsoon-2015/lab1
+Cloning into 'cps-monsoon-2015/lab1'...
+fatal: repository 'https://github.com/' not found
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop$ git clone https://github.com/ cps-monsoon-2015/lab1
+Cloning into 'cps-monsoon-2015/lab1'...
+fatal: repository 'https://github.com/' not found
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop$ git clone https://github.com/cps-monsoon-2015/lab1
+Cloning into 'lab1'...
+remote: Counting objects: 222, done.
+remote: Compressing objects: 100% (162/162), done.
+remote: Total 222 (delta 111), reused 164 (delta 53), pack-reused 0
+Receiving objects: 100% (222/222), 52.73 KiB | 48.00 KiB/s, done.
+Resolving deltas: 100% (111/111), done.
+Checking connectivity... done.
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop$ cd lab1
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ gedit participants/201560522.txt
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants/201560522.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git add participants/201560522.txt
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants/201560522.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ gedit explanations/201560522_partcipants.txt
+
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ 
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560522_explanation.txt
+	participants/201560522.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git add explanations/201560522_explanation.txt
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   explanations/201560522_explanation.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants/201560522.txt~
+
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   explanations/201560522_explanation.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants/201560522.txt~
+
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git add participants/201560522.txt
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   explanations/201560522_explanation.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants/201560522.txt~
+
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   explanations/201560522_explanation.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants/201560522.txt~
+
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git commit -m "added explanation on GIT"
+[master 0fb01b4] added explanation on GIT
+ 1 file changed, 1 insertion(+)
+ create mode 100644 explanations/201560522_explanation.txt
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants/201560522.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ gedit participants/201560522.txt
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants/201560522.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git add ^C
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ gedit participants/201560522.txt
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git add participants/201560522.txt
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants/201560522.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants/201560522.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants/201560522.txt~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git add participants/201560522.txt
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   participants/201560522.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants/201560522.txt~
+
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git commit -m "added information about tejeswi muthireddy"
+[master 9e28557] added information about tejeswi muthireddy
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/cps-monsoon-2015/lab1/'
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.02 KiB | 0 bytes/s, done.
+Total 8 (delta 5), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   53f5281..9e28557  master -> master
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ gedit participants.md
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md
+	modified:   participants.md~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants/201560522.txt~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git add participants.md
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git commit -m "added name and roll number"
+[master 52d49cc] added name and roll number
+ 1 file changed, 1 insertion(+)
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ gedit participants.rkt
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git add participants.rkt
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ racket -f participants.rkt
+The program 'racket' is currently not installed. You can install it by typing:
+sudo apt-get install racket
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ sudo apt-get install racket
+[sudo] password for shreyali: 
+Sorry, try again.
+[sudo] password for shreyali: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  racket-common racket-doc
+The following NEW packages will be installed:
+  racket racket-common racket-doc
+0 upgraded, 3 newly installed, 0 to remove and 628 not upgraded.
+Need to get 52.7 MB of archives.
+After this operation, 335 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/universe racket-common all 5.3.6+dfsg1-1 [30.7 MB]
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty/universe racket amd64 5.3.6+dfsg1-1 [1,585 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty/universe racket-doc all 5.3.6+dfsg1-1 [20.5 MB]
+Fetched 52.7 MB in 4s (11.1 MB/s)      
+Selecting previously unselected package racket-common.
+(Reading database ... 163953 files and directories currently installed.)
+Preparing to unpack .../racket-common_5.3.6+dfsg1-1_all.deb ...
+Unpacking racket-common (5.3.6+dfsg1-1) ...
+Selecting previously unselected package racket.
+Preparing to unpack .../racket_5.3.6+dfsg1-1_amd64.deb ...
+Unpacking racket (5.3.6+dfsg1-1) ...
+Selecting previously unselected package racket-doc.
+Preparing to unpack .../racket-doc_5.3.6+dfsg1-1_all.deb ...
+Unpacking racket-doc (5.3.6+dfsg1-1) ...
+Processing triggers for man-db (2.6.7.1-1) ...
+Processing triggers for gnome-menus (3.10.1-0ubuntu2) ...
+Processing triggers for desktop-file-utils (0.22-1ubuntu1) ...
+Processing triggers for bamfdaemon (0.5.1+14.04.20140409-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for mime-support (3.54ubuntu1) ...
+Setting up racket-common (5.3.6+dfsg1-1) ...
+Setting up racket (5.3.6+dfsg1-1) ...
+Setting up racket-doc (5.3.6+dfsg1-1) ...
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git commit -m "added name and rollnumber"
+[master f636444] added name and rollnumber
+ 1 file changed, 2 insertions(+)
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants.rkt~
+	participants/201560522.txt~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git add participants.rkt
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   participants.rkt
+ 
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	participants.rkt~
+	participants/201560522.txt~
+
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git commit -m "added name and rollnumber"
+[master de5dde4] added name and rollnumber
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 873 bytes | 0 bytes/s, done.
+Total 9 (delta 6), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   9e28557..de5dde4  master -> master
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ cd explnation
+bash: cd: explnation: No such file or directory
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ explanation
+explanation: command not found
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ cd explanation
+bash: cd: explanation: No such file or directory
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ cd explanatins
+bash: cd: explanatins: No such file or directory
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1$ cd explanations
+shreyali@shreyali-HP-2000-Notebook-PC:~/Desktop/lab1/explanations$ gedit 201560522_lab1.txt
+    
