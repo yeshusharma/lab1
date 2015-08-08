@@ -1,0 +1,124 @@
+commit 19940831867ae4ff6604e2f3a848865f81543773
+Author: danamma kalavikatte <danammakalavikatte@gmail.com>
+Date:   Sat Aug 8 17:42:52 2015 +0530
+
+    added information about Danamma
+
+commit 118be1b0f3c562f5abed1c07a097199483e66b09
+Author: Aditi <aditi.gautam78@gmail.com>
+Date:   Fri Aug 7 22:12:22 2015 +0530
+
+    added participants
+
+commit b7da66884c8b485cf7e7f708d7a94f8741e6efc7
+Author: Aditi <aditi.gautam78@gmail.com>
+Date:   Fri Aug 7 22:06:24 2015 +0530
+
+    added information about anjali
+
+commit 633e5077e1e7af16ed5b985ca7ea40f7c3527d23
+Author: sudhanshu <sudhanshu2405@gmail.com>
+Date:   Sat Aug 8 08:32:03 2015 +0530
+
+    Information about Sudhanshu
+:
+
+Reading state information... Done
+The following extra packages will be installed:
+  racket-common racket-doc
+The following NEW packages will be installed:
+  racket racket-common racket-doc
+0 upgraded, 3 newly installed, 0 to remove and 365 not upgraded.
+Need to get 52.7 MB of archives.
+After this operation, 335 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/universe racket-common all 5.3.6+dfsg1-1 [30.7 MB]
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty/universe racket amd64 5.3.6+dfsg1-1 [1,585 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty/universe racket-doc all 5.3.6+dfsg1-1 [20.5 MB]
+Fetched 52.7 MB in 5s (10.0 MB/s)      
+Selecting previously unselected package racket-common.
+(Reading database ... 164535 files and directories currently installed.)
+Preparing to unpack .../racket-common_5.3.6+dfsg1-1_all.deb ...
+Unpacking racket-common (5.3.6+dfsg1-1) ...
+Selecting previously unselected package racket.
+Preparing to unpack .../racket_5.3.6+dfsg1-1_amd64.deb ...
+Unpacking racket (5.3.6+dfsg1-1) ...
+Selecting previously unselected package racket-doc.
+Preparing to unpack .../racket-doc_5.3.6+dfsg1-1_all.deb ...
+Unpacking racket-doc (5.3.6+dfsg1-1) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Processing triggers for gnome-menus (3.10.1-0ubuntu2) ...
+Processing triggers for desktop-file-utils (0.22-1ubuntu1) ...
+Processing triggers for bamfdaemon (0.5.1+14.04.20140409-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for mime-support (3.54ubuntu1.1) ...
+Setting up racket-common (5.3.6+dfsg1-1) ...
+Setting up racket (5.3.6+dfsg1-1) ...
+Setting up racket-doc (5.3.6+dfsg1-1) ...
+danu@danu-VPCEH25EN:~/lab1$ git add participants.rkt
+danu@danu-VPCEH25EN:~/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   participants.rkt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+	deleted:    participants/201560625_participants.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560625_explanations.txt~
+	explanations/explanations
+	participants.rkt~
+	participants/201560625_participants.txt~
+	participants/participants
+	participants/participants~
+
+danu@danu-VPCEH25EN:~/lab1$ git commit -m "Added name & roll no."
+[master 966182c] Added name & roll no.
+ 1 file changed, 1 insertion(+)
+danu@danu-VPCEH25EN:~/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/cps-monsoon-2015/lab1/'
+danu@danu-VPCEH25EN:~/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 638 bytes | 0 bytes/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   f803a6c..966182c  master -> master
+danu@danu-VPCEH25EN:~/lab1$ 
+danu@danu-VPCEH25EN:~$ cd lab1
+danu@danu-VPCEH25EN:~/lab1$ cd explanations
+danu@danu-VPCEH25EN:~/lab1/explanations$ gedit explanations 201560625_explanations.txt
+
+
+danu@danu-VPCEH25EN:~/lab1/explanations$ 
+danu@danu-VPCEH25EN:~/lab1/explanations$ 
+danu@danu-VPCEH25EN:~/lab1/explanations$ gedit 201560625_lab1.txt
+
+Commands studied
+git init  "initialises the git version control system"
+git add   "adds any character or file"
+git commit "saves the changes made by us in the respository"
+git clone  "makes a copy of a repository"
+git status "tells about the status of the current file"
+git log    "tells about the whole history of the repository"
+git push   "introduces the file into the main repository hub"
+git pull   "takes a file from the online git hub"
+
+
