@@ -1,0 +1,573 @@
+Lab1
+========
+Gitanjali Vaidya 
+
+
+Terminal session for Git commands
+==========================================================
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560558_explanations.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ gedit /participants/201560558.txt
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ cd participants
+gitanjali@gitanjali-VPCEB34EN:~/lab1/participants$ gedit 201560558.txt
+gitanjali@gitanjali-VPCEB34EN:~/lab1/participants$ ls -ltr
+total 32
+-rw-rw-r-- 1 gitanjali gitanjali  24 Aug  8 10:37 <roll_no>
+-rw-rw-r-- 1 gitanjali gitanjali 516 Aug  8 10:37 Aboutme.txt
+-rw-rw-r-- 1 gitanjali gitanjali 123 Aug  8 10:37 201560562.txt
+-rw-rw-r-- 1 gitanjali gitanjali 126 Aug  8 10:37 201560557
+-rw-rw-r-- 1 gitanjali gitanjali  39 Aug  8 10:37 201560543.txt
+-rw-rw-r-- 1 gitanjali gitanjali  79 Aug  8 10:37 201460623
+-rw-rw-r-- 1 gitanjali gitanjali 140 Aug  8 11:08 201560592.txt
+-rw-rw-r-- 1 gitanjali gitanjali  86 Aug  8 11:23 201560558.txt
+gitanjali@gitanjali-VPCEB34EN:~/lab1/participants$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../explanations/201560558_explanations.txt~
+	201560558.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+gitanjali@gitanjali-VPCEB34EN:~/lab1/participants$ git add 201560558.txt
+gitanjali@gitanjali-VPCEB34EN:~/lab1/participants$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   201560558.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../explanations/201560558_explanations.txt~
+
+gitanjali@gitanjali-VPCEB34EN:~/lab1/participants$ git commit -m "Added by gitanjali as part of lab ex1"
+[master bb57ea7] Added by gitanjali as part of lab ex1
+ 1 file changed, 3 insertions(+)
+ create mode 100644 participants/201560558.txt
+gitanjali@gitanjali-VPCEB34EN:~/lab1/participants$ cd ..
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ ls -ltr
+total 28
+-rw-rw-r-- 1 gitanjali gitanjali   55 Aug  8 10:37 README.md
+-rw-rw-r-- 1 gitanjali gitanjali  644 Aug  8 10:37 tips.md
+-rw-rw-r-- 1 gitanjali gitanjali  560 Aug  8 10:37 participants.rkt
+-rw-rw-r-- 1 gitanjali gitanjali  279 Aug  8 10:37 participants.md~
+-rw-rw-r-- 1 gitanjali gitanjali  306 Aug  8 11:08 participants.md
+drwxrwxr-x 2 gitanjali gitanjali 4096 Aug  8 11:08 explanations
+drwxrwxr-x 2 gitanjali gitanjali 4096 Aug  8 11:23 participants
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ pwd
+/home/gitanjali/lab1
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git push https://github.com/cps-monsoon-2015/lab1
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+To https://github.com/cps-monsoon-2015/lab1
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/cps-monsoon-2015/lab1'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git pull https://github.com/cps-monsoon-2015/lab1
+remote: Counting objects: 15, done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 15 (delta 9), reused 14 (delta 8), pack-reused 0
+Unpacking objects: 100% (15/15), done.
+From https://github.com/cps-monsoon-2015/lab1
+ * branch            HEAD       -> FETCH_HEAD
+Removing participants/<roll_no>
+Merge made by the 'recursive' strategy.
+ explanations/201560573_explanation.txt | 3 +++
+ participants.rkt                       | 2 +-
+ participants/201560573.txt             | 2 ++
+ participants/<roll_no>                 | 3 ---
+ 4 files changed, 6 insertions(+), 4 deletions(-)
+ create mode 100644 explanations/201560573_explanation.txt
+ create mode 100644 participants/201560573.txt
+ delete mode 100644 participants/<roll_no>
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git push origin master
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 24, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (15/15), 1.89 KiB | 0 bytes/s, done.
+Total 15 (delta 9), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   cc56841..55edd50  master -> master
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git log
+commit 55edd500e87e442b66ed1e186ca557d284ba7403
+Merge: bb57ea7 cc56841
+Author: gitanjali vaidya <gitanjali.v@students.iiit.ac.in>
+Date:   Sat Aug 8 11:27:38 2015 +0530
+
+    Merge https://github.com/cps-monsoon-2015/lab1
+
+commit bb57ea7b12469148458c7fbebe3bf10ec0cfb3dd
+Author: gitanjali vaidya <gitanjali.v@students.iiit.ac.in>
+Date:   Sat Aug 8 11:25:02 2015 +0530
+
+    Added by gitanjali as part of lab ex1
+
+commit a1dfd92702efc78c8b97fce0b98312f92b3302fa
+Merge: 7a0b0f5 229daf8
+Author: gitanjali vaidya <gitanjali.v@students.iiit.ac.in>
+Date:   Sat Aug 8 11:08:54 2015 +0530
+
+    Merge https://github.com/cps-monsoon-2015/lab1
+
+commit 7a0b0f535ef44cf006e9cabbdb9b41d492f370b8
+Author: gitanjali vaidya <gitanjali.v@students.iiit.ac.in>
+Date:   Sat Aug 8 11:00:58 2015 +0530
+
+    Added by gitanjali as part of lab ex1
+
+commit cc56841c1bab6685d4ad3211c84df12e8ff97642
+Merge: 8437ae7 156c1df
+Author: sanchitach <chaturvedisanchita53@gmail.com>
+Date:   Sat Aug 8 00:17:47 2015 +0530
+
+    Merge branch 'master' of https://github.com/cps-monsoon-2015/lab1
+
+commit 156c1df312090fcf07510ea350f41bf16208ded3
+Author: Vinay Kusuma <vinaykusumarhcp@gmail.com>
+Date:   Sat Aug 8 00:10:41 2015 +0530
+
+    Added information about vinay k
+
+[1]+  Stopped                 git log
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ pwd
+/home/gitanjali/lab1
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ ls -ltr
+total 28
+-rw-rw-r-- 1 gitanjali gitanjali   55 Aug  8 10:37 README.md
+-rw-rw-r-- 1 gitanjali gitanjali  644 Aug  8 10:37 tips.md
+-rw-rw-r-- 1 gitanjali gitanjali  279 Aug  8 10:37 participants.md~
+-rw-rw-r-- 1 gitanjali gitanjali  306 Aug  8 11:08 participants.md
+drwxrwxr-x 2 gitanjali gitanjali 4096 Aug  8 11:27 explanations
+-rw-rw-r-- 1 gitanjali gitanjali  598 Aug  8 11:27 participants.rkt
+drwxrwxr-x 2 gitanjali gitanjali 4096 Aug  8 11:27 participants
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ gedit participants.md
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md
+	modified:   participants.md~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560558_explanations.txt~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git add participants.md
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   participants.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560558_explanations.txt~
+
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git commit -m "Added by gitanjali as part of lab ex1"
+[master 5931e44] Added by gitanjali as part of lab ex1
+ 1 file changed, 1 insertion(+)
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560558_explanations.txt~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git push https://github.com/cps-monsoon-2015/lab1
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 336 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   55edd50..5931e44  master -> master
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ gedit participants.rkt
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+	modified:   participants.rkt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560558_explanations.txt~
+	participants.rkt~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git add participants.rkt
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   participants.rkt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560558_explanations.txt~
+	participants.rkt~
+
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git reset
+Unstaged changes after reset:
+M	participants.md~
+M	participants.rkt
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ gedit participants.rkt
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+	modified:   participants.rkt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560558_explanations.txt~
+	participants.rkt~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ racket -f participants.rkt
+The program 'racket' is currently not installed. You can install it by typing:
+sudo apt-get install racket
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ sudo apt-get install racket
+[sudo] password for gitanjali: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  racket-common racket-doc
+The following NEW packages will be installed:
+  racket racket-common racket-doc
+0 upgraded, 3 newly installed, 0 to remove and 365 not upgraded.
+Need to get 52.7 MB of archives.
+After this operation, 335 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/universe racket-common all 5.3.6+dfsg1-1 [30.7 MB]
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty/universe racket amd64 5.3.6+dfsg1-1 [1,585 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty/universe racket-doc all 5.3.6+dfsg1-1 [20.5 MB]
+Fetched 52.7 MB in 7s (6,777 kB/s)                                             
+Selecting previously unselected package racket-common.
+(Reading database ... 164535 files and directories currently installed.)
+Preparing to unpack .../racket-common_5.3.6+dfsg1-1_all.deb ...
+Unpacking racket-common (5.3.6+dfsg1-1) ...
+Selecting previously unselected package racket.
+Preparing to unpack .../racket_5.3.6+dfsg1-1_amd64.deb ...
+Unpacking racket (5.3.6+dfsg1-1) ...
+Selecting previously unselected package racket-doc.
+Preparing to unpack .../racket-doc_5.3.6+dfsg1-1_all.deb ...
+Unpacking racket-doc (5.3.6+dfsg1-1) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Processing triggers for gnome-menus (3.10.1-0ubuntu2) ...
+Processing triggers for desktop-file-utils (0.22-1ubuntu1) ...
+Processing triggers for bamfdaemon (0.5.1+14.04.20140409-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for mime-support (3.54ubuntu1.1) ...
+Setting up racket-common (5.3.6+dfsg1-1) ...
+Setting up racket (5.3.6+dfsg1-1) ...
+Setting up racket-doc (5.3.6+dfsg1-1) ...
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ racket -f participants.rkt
+1 201560543 Aditi Gautam
+2 201560562 Anjali Verma
+3 201560558 Gitanjali Vaidya
+4 201212345 Gugan Vignesh Servaraj
+5 201460623 Janani Sundar
+6 201560557 Sudhanshu Kumar Singh
+7 201560592 Vinay Kusuma
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git add participants.rkt
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   participants.rkt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   participants.md~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560558_explanations.txt~
+	participants.rkt~
+
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git commit -m "Added by gitanjali as part of lab ex1"
+[master caa597f] Added by gitanjali as part of lab ex1
+ 1 file changed, 1 insertion(+)
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ git push https://github.com/cps-monsoon-2015/lab1
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': cps-monsoon-2015
+Password for 'https://cps-monsoon-2015@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 334 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/cps-monsoon-2015/lab1
+   5931e44..caa597f  master -> master
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ pwd
+/home/gitanjali/lab1
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ cd explanation
+bash: cd: explanation: No such file or directory
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ ls -ltr
+total 32
+-rw-rw-r-- 1 gitanjali gitanjali   55 Aug  8 10:37 README.md
+-rw-rw-r-- 1 gitanjali gitanjali  644 Aug  8 10:37 tips.md
+-rw-rw-r-- 1 gitanjali gitanjali  306 Aug  8 11:08 participants.md~
+drwxrwxr-x 2 gitanjali gitanjali 4096 Aug  8 11:27 explanations
+-rw-rw-r-- 1 gitanjali gitanjali  598 Aug  8 11:27 participants.rkt~
+drwxrwxr-x 2 gitanjali gitanjali 4096 Aug  8 11:27 participants
+-rw-rw-r-- 1 gitanjali gitanjali  337 Aug  8 11:42 participants.md
+-rw-rw-r-- 1 gitanjali gitanjali  642 Aug  8 11:49 participants.rkt
+gitanjali@gitanjali-VPCEB34EN:~/lab1$ cd explanations
+gitanjali@gitanjali-VPCEB34EN:~/lab1/explanations$ script 201560558_lab1.txt
+Script started, file is 201560558_lab1.txt
+gitanjali@gitanjali-VPCEB34EN:~/lab1/explanations$ vi 201560558_explanation.txt
+
+[1]+  Stopped                 vi 201560558_explanation.txt
+gitanjali@gitanjali-VPCEB34EN:~/lab1/explanations$ ls -ltr
+total 100
+-rw-rw-r-- 1 gitanjali gitanjali  2503 Aug  8 10:37 201560562_explanation.txt
+-rw-rw-r-- 1 gitanjali gitanjali  3407 Aug  8 10:37 201560557_lab1.txt
+-rw-rw-r-- 1 gitanjali gitanjali   228 Aug  8 10:37 201560557_explanation.txt
+-rw-rw-r-- 1 gitanjali gitanjali 21971 Aug  8 10:37 201560543_lab1.txt
+-rw-rw-r-- 1 gitanjali gitanjali   342 Aug  8 10:37 201560543_explanation.txt
+-rw-rw-r-- 1 gitanjali gitanjali 17997 Aug  8 10:37 sample.pdf
+-rw-rw-r-- 1 gitanjali gitanjali  1334 Aug  8 10:37 sample
+-rw-rw-r-- 1 gitanjali gitanjali 15913 Aug  8 10:37 201560562_lab1.txt
+-rw-rw-r-- 1 gitanjali gitanjali   974 Aug  8 10:56 201560558_explanations.txt~
+-rw-rw-r-- 1 gitanjali gitanjali   974 Aug  8 10:56 201560558_explanations.txt
+-rw-rw-r-- 1 gitanjali gitanjali  1230 Aug  8 11:08 201560592_explanation.txt
+-rw-rw-r-- 1 gitanjali gitanjali   190 Aug  8 11:27 201560573_explanation.txt
+-rw-rw-r-- 1 gitanjali gitanjali  4096 Aug  8 12:25 201560558_lab1.txt
+gitanjali@gitanjali-VPCEB34EN:~/lab1/explanations$ gedit 201560558_lab1.txt
+gitanjali@gitanjali-VPCEB34EN:~/lab1/explanations$ exit
+exit
+There are stopped jobs.
+gitanjali@gitanjali-VPCEB34EN:~/lab1/explanations$ gedit 201560558_lab1.txt
+gitanjali@gitanjali-VPCEB34EN:~/lab1/explanations$ rm 201560558_lab1.txt
+gitanjali@gitanjali-VPCEB34EN:~/lab1/explanations$ ls -ltr
+total 96
+-rw-rw-r-- 1 gitanjali gitanjali  2503 Aug  8 10:37 201560562_explanation.txt
+-rw-rw-r-- 1 gitanjali gitanjali  3407 Aug  8 10:37 201560557_lab1.txt
+-rw-rw-r-- 1 gitanjali gitanjali   228 Aug  8 10:37 201560557_explanation.txt
+-rw-rw-r-- 1 gitanjali gitanjali 21971 Aug  8 10:37 201560543_lab1.txt
+-rw-rw-r-- 1 gitanjali gitanjali   342 Aug  8 10:37 201560543_explanation.txt
+-rw-rw-r-- 1 gitanjali gitanjali 17997 Aug  8 10:37 sample.pdf
+-rw-rw-r-- 1 gitanjali gitanjali  1334 Aug  8 10:37 sample
+-rw-rw-r-- 1 gitanjali gitanjali 15913 Aug  8 10:37 201560562_lab1.txt
+-rw-rw-r-- 1 gitanjali gitanjali   974 Aug  8 10:56 201560558_explanations.txt~
+-rw-rw-r-- 1 gitanjali gitanjali   974 Aug  8 10:56 201560558_explanations.txt
+-rw-rw-r-- 1 gitanjali gitanjali  1230 Aug  8 11:08 201560592_explanation.txt
+-rw-rw-r-- 1 gitanjali gitanjali   190 Aug  8 11:27 201560573_explanation.txt
+gitanjali@gitanjali-VPCEB34EN:~/lab1/explanations$ ls -ltr
+total 96
+-rw-rw-r-- 1 gitanjali gitanjali  2503 Aug  8 10:37 201560562_explanation.txt
+-rw-rw-r-- 1 gitanjali gitanjali  3407 Aug  8 10:37 201560557_lab1.txt
+-rw-rw-r-- 1 gitanjali gitanjali   228 Aug  8 10:37 201560557_explanation.txt
+-rw-rw-r-- 1 gitanjali gitanjali 21971 Aug  8 10:37 201560543_lab1.txt
+-rw-rw-r-- 1 gitanjali gitanjali   342 Aug  8 10:37 201560543_explanation.txt
+-rw-rw-r-- 1 gitanjali gitanjali 17997 Aug  8 10:37 sample.pdf
+-rw-rw-r-- 1 gitanjali gitanjali  1334 Aug  8 10:37 sample
+-rw-rw-r-- 1 gitanjali gitanjali 15913 Aug  8 10:37 201560562_lab1.txt
+-rw-rw-r-- 1 gitanjali gitanjali   974 Aug  8 10:56 201560558_explanations.txt~
+-rw-rw-r-- 1 gitanjali gitanjali   974 Aug  8 10:56 201560558_explanations.txt
+-rw-rw-r-- 1 gitanjali gitanjali  1230 Aug  8 11:08 201560592_explanation.txt
+-rw-rw-r-- 1 gitanjali gitanjali   190 Aug  8 11:27 201560573_explanation.txt
+gitanjali@gitanjali-VPCEB34EN:~/lab1/explanations$ gedit 201560558_lab1.txt
+gitanjali@gitanjali-VPCEB34EN:~/lab1/explanations$ 
+
+======================================================================================
+
+commands
+===============
+# git init --> used to initialize an empty repository
+#git clone --> It will copy the entire history of the project to the local file system so that we can collaborate with different users of the project
+#I used gedit to create and edit the file and saved it to the directories accordingly.
+#git add <list of files> --> to add files to the staging area from working directory.
+#git commit -m "Added by gitanjali as part of ex1" --> commits the file with a user friendly message for redability.
+#git push https://github.com/ cps-monsoon-2015/lab1 --> pushes the changes to the online repository
+#intially I was not able to push changes as it gave an error like refusing to update our branch and it was asking to merge
+#git pull https://github.com/ cps-monsoon-2015/lab1 --> I was able to perform merge using git pull command.
+#git push origin master --> I was able to push my local changes to the branch 
+# I was able to see my changes online in the Git repository
+#git log --> I was able to view the history of saves done by different users along the time frame.commit a1dfd92702efc78c8b97fce0b98312f92b3302fa
+Merge: 7a0b0f5 229daf8
+Author: gitanjali vaidya <gitanjali.v@students.iiit.ac.in>
+Date:   Sat Aug 8 11:08:54 2015 +0530
+
+    Merge https://github.com/cps-monsoon-2015/lab1
+
+commit 7a0b0f535ef44cf006e9cabbdb9b41d492f370b8
+Author: gitanjali vaidya <gitanjali.v@students.iiit.ac.in>
+Date:   Sat Aug 8 11:00:58 2015 +0530
+
+    Added by gitanjali as part of lab ex1
+
+commit cc56841c1bab6685d4ad3211c84df12e8ff97642
+Merge: 8437ae7 156c1df
+Author: sanchitach <chaturvedisanchita53@gmail.com>
+Date:   Sat Aug 8 00:17:47 2015 +0530
+
+    Merge branch 'master' of https://github.com/cps-monsoon-2015/lab1
+
+commit 156c1df312090fcf07510ea350f41bf16208ded3
+Author: Vinay Kusuma <vinaykusumarhcp@gmail.com>
+Date:   Sat Aug 8 00:10:41 2015 +0530
+
+git status --> It shows the status of the file whether it is commited or not
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+	modified:   participants.md~
+	modified:   participants.rkt
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	explanations/201560558_explanations.txt~
+	participants.rkt~
+git reset --> I used it to reset my change
+I add file to the staging area before running racket i used reset it was able to reset to the previous state.
+
+
