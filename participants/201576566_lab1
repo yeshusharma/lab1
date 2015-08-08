@@ -1,0 +1,26 @@
+Name: Yeshu Sharma
+Course: PhD Spatial Informatics
+Roll No. : 201576566
+
+Lab1 was all about our introduction to Git - a distributed control system repository (DVCS- everyone has a copy of the repo unlike central system), which not only help us in collaboration with one or many individuals but also have a fast efficiency and is capable of handling large projects.
+
+Not only it deals with the collaboration issues of two people working on the same file by merging them but also put them into a time capsule i.e., a complete log of the history when the changes have been made into the file and along with the reason for the change.
+
+Commands and their functions -
+git init : make a empty repository .git in a hidden directory.
+git status : tells the status of the file, whether it is in the staging area or not
+git add : starts to track your file in statging area
+git commit-m : to store our staged changes
+git rm : to remove our staged file
+git add '*.txt/jpg/png' : add all the text file/ jpg file/ png file respectively
+git log : gives the entire details and history of your commits i.e., the changes made by you or some one else at what time.
+git remote add origin https:// address : to add a remote repo
+git push -u origin master : to simply push your repo to the remote repo
+git pull origin master : to pull down any new changes that has been made
+git diff HEAD : to see the difference from ournlast commit
+git reset : to reset the commits to the original changes by you
+git branch clean up : to make a branch clean up
+git check out : used to go into different branches master or clean up both
+git merge : to merge two different branches
+git branch -d clean_up : to remove or delete any branch
+
